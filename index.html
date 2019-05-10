@@ -3,7 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  
+  <title>Getting Started with Prebid.js for Header Bidding</title>
+
+
+    <!-- OneTrust Cookies Consent Notice start -->
+
+    <script src="https://cdn.cookielaw.org/consent/53783db5-1614-43d4-bb1a-148e68e8c87b.js" type="text/javascript" charset="UTF-8"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end -->
+
+
+    <!--<link href="/assets/css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/assets/css/docs.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+
+    <!-- Favicons -->
+    <link href="/assets/images/favicon.png" rel="icon">
+    <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,700,700i>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <style>
+        #content {
+            background:#3b88c3;
+            background:linear-gradient(135deg, #3b88c3, );
+        }
+    </style>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/bootbox.min.js"></script>
+    <script src="/assets/js/docs.min.js"></script>
+    <script src="/assets/js/easing.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/pbjs_home.js"></script>
+  
   
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
@@ -13,7 +58,6066 @@
     });
   </script>
 </head>
+
 <body>
-  Hello
-</body>
-</html>
+
+
+<nav class="navbar navbar-default navbar-fixed-top pb-mobile-nav">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/logos/prebid_final.png"></a>
+
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Overview
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;General</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/intro.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;What is Prebid?</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/principles.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Project Principles</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/contributing/contribute.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Contributing</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/what-is-prebid-org.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;About Prebid.org</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/partners/partners.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Members and Partners</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/prebid-management-committees.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Management Committees</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/wrapper_code_of_conduct.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Header Bidding Wrapper Code of Conduct</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/community-code-of-conduct.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Community Code of Conduct</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/developers.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Developers</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/ip-policy.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.org IP Policy</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/privacy.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Privacy Policy</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/cookies.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Cookies</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid/managed.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Managed Services</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Prebid.js
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Developer Quick Start</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid/prebidjs.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;What is Prebid.js</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/getting-started.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Getting Started</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/videos/setup.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.js Training Videos</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Examples</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/examples/basic-example.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Basic Example</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/examples/multi-format-example.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Multi-Format Ads</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/examples/adunit-refresh.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Individual Ad Unit Refresh/Infinite Scroll</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/examples/use-prebid-with-appnexus-ad-server.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Using Prebid.js with AppNexus Publisher Ad Server</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/examples/postbid.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Postbid Example</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/examples/custom-price-buckets.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Custom Price Granularity Buckets</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/examples/size-mapping.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Filter Sizes Dynamically with Labels</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Troubleshooting</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/faq.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.js FAQ</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/troubleshooting-tips.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Dev Tips</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/common-issues.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Common Issues</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/prebid-troubleshooting-guide.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.js Troubleshooting Guide</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/debugging/debugging.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Browser Extension for Debugging</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/videos/troubleshooting.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.js Troubleshooting Training Videos</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Reference</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/publisher-api-reference.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Publisher API Reference</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/adunit-reference.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Ad Unit Reference</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/bidders.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Bidder Params</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid/prebidjsReleases.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.js Releases</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/prebid-1.0-API.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid 1.0 Publisher API Changes</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Adding an Adapter</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/bidder-adaptor.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;How to Add a Bidder Adapter</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/integrate-with-the-prebid-analytics-api.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;How to Add an Analytics Adapter</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Prebid Modules</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Module Overview</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/currency.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Currency</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/dfp_express.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;DFP Express</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/digitrust.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;DigiTrust</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/s2sTesting.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Server To Server Testing</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/dfp_video.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;DFP Video</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/userId.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;User ID</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/pubCommonId.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Publisher Common ID</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/consentManagement.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;GPDR Consent Management</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/categoryTranslation.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Category Translation</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/freewheel.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Freewheel Module</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/adpod.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Ad Pod Module</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;External Interfaces</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/plugins/" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Plugins</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Analytics</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/analytics.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Analytics For Prebid</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/ga-analytics.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Analytics for GA</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Features</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/show-native-ads.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Native Ads</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/show-multi-format-ads.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Multi-Format Ads</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/conditional-ad-units.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Conditional Ad Units</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/what-is-post-bid.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Post-Bid</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Prebid Mobile
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;General</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/prebid-mobile.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Overview</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/prebid-mobile-pbs.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Getting Started With Prebid Mobile</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/show-prebid-ads-on-amp-pages.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid AMP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/gdpr.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;GDPR and Mobile</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/download.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Download</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;For iOS</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/code-integration-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Code Integration</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/pbm-api-iOS.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;iOS Mobile API</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/pbm-adunit-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Ad Unit</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/pbm-bannerad-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Banner Ad Unit</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/pbm-interstitial-ad-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Interstitial Ad Unit</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/pbm-targeting-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Targeting Parameters</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/pbm-api-result-codes-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Result Codes</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/prebidmobile-object-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Mobile Object</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;For Android</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/code-integration-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Code Integration</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/pbm-api-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Android Mobile API</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/adunit-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Ad Unit</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/banneradunit-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Banner Ad Unit</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/interstitialadunit-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Interstitial Ad Unit</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/pbm-targeting-params-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Targeting Parameters</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/pbm-api-result-codes-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Result Codes</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/prebidmobile-object-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Mobile Object</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;For Ad Ops</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/adops-line-item-setup-dfp.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setup Line items For DFP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/adops-line-item-setup-mopub.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setup Line Items For MoPub</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/adops-price-granularity.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Price Granularity</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/dr-prebid.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Dr. Prebid Validation App</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;For Contributors</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/add-an-ad-server-adapter.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Add an Ad Server Adapter</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Legacy API</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/legacy/ios/code-integration-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Code Integration - iOS</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/legacy/ios/targeting-params-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Targeting Parameters - iOS</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/legacy/ios/logging-troubleshooting-ios.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Logging and Troubleshooting - iOS</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/legacy/android/code-integration-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Code Integration - Android</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/legacy/android/targeting-params-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Targeting Parameters - Android</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/legacy/android/logging-troubleshooting-android.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Logging and Troubleshooting - Android</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Ad Ops
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Ad Ops Tutorials</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/before-you-start.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;AdOps View of Prebid</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/prebid-universal-creative.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Universal Creative</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/step-by-step.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Guide to DFP Setup</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/send-all-bids-adops.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Send All Bids to the Ad Server</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/setting-up-prebid-for-amp-in-dfp.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setting up Prebid for AMP in DFP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/setting-up-prebid-multi-format-in-dfp.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setting up Prebid Multi-Format in DFP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/setting-up-prebid-native-in-dfp.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setting up Prebid Native in DFP (Alpha)</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/setting-up-prebid-video-in-dfp.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setting up Prebid Video in DFP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/setting-up-prebid-video-in-freewheel.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setting up Prebid Long-Form Video in FreeWheel</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/setting-up-prebid-with-the-appnexus-ad-server.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setting up Prebid with the AppNexus Publisher Ad Server</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/setting-up-prebidjs-with-Smart-Ad-Server.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Setting up Prebid.js with Smart Ad Server</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/adops/deals.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Enable Deals</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Studies</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/how-many-bidders-for-header-bidding.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Optimize Header Bidding Setup</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/optimal-header-bidding-setup.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Optimal Header Bidding Setup</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/how-to-reduce-latency-of-header-bidding.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;How To Reduce The Latency of Header Bidding With Prebid.js</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/how-to-simplify-line-item-setup.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;How to Simplify Line Item Setup</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Prebid Video
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Overview</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-video/video-overview.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.js for Video Overview</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-video/video-getting-started.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Getting Started with Video for Prebid.js</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-video/video-long-form.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Getting Started with Long Form Video for Prebid.js</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/show-video-with-a-dfp-video-tag.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Show Video Ads with DFP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/show-outstream-video-ads.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Outstream Video Ads</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/videos/prebid-video.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Training Videos</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Examples</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/examples/video/" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid.js Video Examples</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Prebid Server
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Prebid Server Overview</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/prebid-server-overview.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Overview</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Developers</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/add-new-analytics-module.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Add A New Analytics Module</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/add-new-bidder.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Add A Bidder</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/pbs-bidder-info.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Server Bidders - Additional Info</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/cookie-syncs.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Cookie Sync Technical Details</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/currency-converter.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Currency Converter</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/default-request.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Default Request</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/gdpr.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;GDPR Mechanics</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/developers/stored-requests.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Stored Requests</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;Endpoints</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/info/bidders.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Info - Bidders</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/info/bidders/bidderName.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Info - Bidder Name</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/bidders/params.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Bidders - Params</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/cookieSync.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Starting Cookie Sync</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/openrtb2/auction.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Server Auction</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/openrtb2/amp.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Server AMP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/openrtb2/video.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Prebid Server Video</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/setuid.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Saving User Syncs</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-server/endpoints/status.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Get Status</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Formats
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+                        <li><span class="pb-mobile-dropdown-header">&nbsp;&nbsp;General</span></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/formats.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Overview</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/display.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Display</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-video/video-overview.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Video</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/show-native-ads.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Native</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/amp.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;AMP</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/show-multi-format-ads.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Multi-Format</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-mobile-dropdown" data-prebidclickid="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Support
+                        <span class="caret" />
+                    </a>
+
+                    <!--get subsections-->
+
+
+                    <ul class="dropdown-menu">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <li><a href="/support/" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Help</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/troubleshooting/troubleshooting.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Troubleshooting</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/videos/" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Training Videos</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/faq/faq.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;FAQs</a></li>
+
+
+
+
+
+
+
+
+
+                        <li><a href="/blog.html" class="pb-mobile-dropdown-item" data-prebidclickid="">&nbsp;&nbsp;Blog</a></li>
+
+
+
+
+
+
+                    </ul>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+    <!--end container-->
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-top pb-main-nav">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/logos/prebid_final.png"></a>
+
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+                <!--get all the sections and subsections -->
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-menu-click" data-prebidclickid="0" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Overview
+                        <span class="caret" />
+                    </a>
+
+
+                    <!-- if there are submenus - should be true each time-->
+
+                    <ul class="dropdown-menu">
+
+                        <!--get how many subsections-->
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/overview/intro.html" class="pb-menu-click" data-prebidclickid="">What is Prebid?</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/principles.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Project Principles</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/contributing/contribute.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Contributing</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/what-is-prebid-org.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;About Prebid.Org</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/partners/partners.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Members and Partners</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/privacy.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Privacy Policy</a></li>
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-menu-click" data-prebidclickid="1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Product
+                        <span class="caret" />
+                    </a>
+
+
+                    <!-- if there are submenus - should be true each time-->
+
+                    <ul class="dropdown-menu">
+
+                        <!--get how many subsections-->
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/prebid/prebidjs.html" class="pb-menu-click" data-prebidclickid="prebidjs">Prebid.js</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/overview/analytics.html" class="pb-menu-click" data-prebidclickid="prebidjs">&nbsp;&nbsp;Analytics</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/modules/index.html" class="pb-menu-click" data-prebidclickid="prebidjs">&nbsp;&nbsp;Modules</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/publisher-api-reference.html" class="pb-menu-click" data-prebidclickid="prebidjs">&nbsp;&nbsp;Publisher API</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/bidders.html" class="pb-menu-click" data-prebidclickid="prebidjs">&nbsp;&nbsp;Bidder Params</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/plugins/index.html" class="pb-menu-click" data-prebidclickid="prebidjs">&nbsp;&nbsp;Plugins</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/prebid-server/prebid-server-overview.html" class="pb-menu-click" data-prebidclickid="">Prebid Server</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/prebid-mobile/prebid-mobile.html" class="pb-menu-click" data-prebidclickid="">Prebid Mobile</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/ios/code-integration-ios.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;iOS</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/prebid-mobile/pbm-api/android/code-integration-android.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Android</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/formats/formats.html" class="pb-menu-click" data-prebidclickid="">Formats</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/display.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Display</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/video.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Video</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/native.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Native</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/amp.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;AMP</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/formats/multiformat.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Multi-Format</a></li>
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-menu-click" data-prebidclickid="2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Support
+                        <span class="caret" />
+                    </a>
+
+
+                    <!-- if there are submenus - should be true each time-->
+
+                    <ul class="dropdown-menu">
+
+                        <!--get how many subsections-->
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/adops/before-you-start.html" class="pb-menu-click" data-prebidclickid="">Ad Ops</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/developers.html" class="pb-menu-click" data-prebidclickid="">Developers</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/support/index.html" class="pb-menu-click" data-prebidclickid="">Help</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/troubleshooting/troubleshooting.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Troubleshooting</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/videos/index.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Training Videos</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/debugging/debugging.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Debugging Extension</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/faq/faq.html" class="pb-menu-click" data-prebidclickid="">FAQ</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/dev-docs/faq.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Prebid.js</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="/faq/prebid-server-faq.html" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Prebid Server</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/blog.html" class="pb-menu-click" data-prebidclickid="">Blog</a></li>
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pb-menu-click" data-prebidclickid="3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Download
+                        <span class="caret" />
+                    </a>
+
+
+                    <!-- if there are submenus - should be true each time-->
+
+                    <ul class="dropdown-menu">
+
+                        <!--get how many subsections-->
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/download.html" class="pb-menu-click" data-prebidclickid="">Prebid.js</a></li>
+
+
+
+
+                        <hr>
+
+
+
+
+
+
+
+                        <!--get the items in each subsection-->
+
+
+
+                        <!--display subitem-->
+
+
+
+                        <li><a href="/prebid-mobile/download.html" class="pb-menu-click" data-prebidclickid="">Prebid Mobile</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="https://github.com/prebid/prebid-mobile-ios" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;iOS</a></li>
+
+
+
+
+
+
+
+
+                        <li><a href="https://github.com/prebid/prebid-mobile-android" class="pb-menu-click" data-prebidclickid="">&nbsp;&nbsp;Android</a></li>
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+
+
+
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end container-->
+</nav>
+
+
+
+<div class="container bs-docs-container">
+
+    <div class="row ">
+
+        <div class="wrapper">
+
+            <div class="col-sm-2 sidebar-expanded d-none d-md-block sidebar" id="sidebar">
+
+                <ul class="list-group">
+
+                    <!--get all sections-->
+
+
+
+
+
+                    <a href="#overview" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Overview&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=overview class="collapse sidebar-submenu">
+
+
+
+
+                        <!--go through each section-->
+
+
+
+                        <!--display subsection headers-->
+
+
+
+
+                        <!--display subsection headers-->
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/overview/intro.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">What is Prebid?</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/principles.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Project Principles</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/contributing/contribute.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Contributing</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/overview/what-is-prebid-org.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">About Prebid.org</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/partners/partners.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Members and Partners</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/overview/prebid-management-committees.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Prebid Management Committees</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/wrapper_code_of_conduct.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Header Bidding Wrapper Code of Conduct</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/overview/community-code-of-conduct.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Community Code of Conduct</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/developers.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Developers</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/overview/ip-policy.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Prebid.org IP Policy</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/privacy.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Privacy Policy</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/cookies.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Cookies</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/prebid/managed.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Managed Services</span>
+
+                        </a>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <a href="#prebidjs" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Prebid.js&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=prebidjs class="collapse sidebar-submenu">
+
+
+
+
+                        <!--go through each section-->
+
+
+                        <a href="#devquickstart" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Developer Quick Start&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=devquickstart class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid/prebidjs.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">What is Prebid.js</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/getting-started.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Getting Started</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/videos/setup.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Prebid.js Training Videos</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#pbjsexamples" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Examples&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=pbjsexamples class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/examples/basic-example.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Basic Example</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/examples/multi-format-example.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Multi-Format Ads</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/examples/adunit-refresh.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Individual Ad Unit Refresh/Infinite Scroll</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/examples/use-prebid-with-appnexus-ad-server.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Using Prebid.js with AppNexus Publisher Ad Server</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/examples/postbid.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Postbid Example</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/examples/custom-price-buckets.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Custom Price Granularity Buckets</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/examples/size-mapping.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Filter Sizes Dynamically with Labels</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#troubleshooting" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Troubleshooting&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=troubleshooting class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/faq.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Prebid.js FAQ</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/troubleshooting-tips.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Dev Tips</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/common-issues.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Common Issues</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/prebid-troubleshooting-guide.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid.js Troubleshooting Guide</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/debugging/debugging.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Browser Extension for Debugging</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/videos/troubleshooting.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Prebid.js Troubleshooting Training Videos</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#reference" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Reference&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=reference class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/publisher-api-reference.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Publisher API Reference</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/adunit-reference.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Ad Unit Reference</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/bidders.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Bidder Params</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid/prebidjsReleases.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid.js Releases</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/prebid-1.0-API.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Prebid 1.0 Publisher API Changes</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#adapters" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Adding an Adapter&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=adapters class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/bidder-adaptor.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">How to Add a Bidder Adapter</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/integrate-with-the-prebid-analytics-api.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">How to Add an Analytics Adapter</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#pbjsmodules" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Prebid Modules&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=pbjsmodules class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Module Overview</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/currency.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Currency</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/dfp_express.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">DFP Express</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/digitrust.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">DigiTrust</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/s2sTesting.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Server To Server Testing</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/dfp_video.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">DFP Video</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/userId.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">User ID</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/pubCommonId.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Publisher Common ID</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/consentManagement.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">GPDR Consent Management</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/categoryTranslation.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Category Translation</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/freewheel.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Freewheel Module</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/modules/adpod.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Ad Pod Module</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#external" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">External Interfaces&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=external class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/plugins/" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Plugins</span>
+
+                            </a>
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#analytics" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Analytics&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=analytics class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/analytics.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Analytics For Prebid</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/ga-analytics.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Prebid Analytics for GA</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#features" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Features&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=features class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/show-native-ads.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Native Ads</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/show-multi-format-ads.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Multi-Format Ads</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/conditional-ad-units.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Conditional Ad Units</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/what-is-post-bid.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Post-Bid</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <a href="#prebid-mobile" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Prebid Mobile&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=prebid-mobile class="collapse sidebar-submenu">
+
+
+
+
+                        <!--go through each section-->
+
+
+                        <a href="#general" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">General&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=general class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/prebid-mobile.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Overview</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/prebid-mobile-pbs.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Getting Started With Prebid Mobile</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/show-prebid-ads-on-amp-pages.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid AMP</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/gdpr.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">GDPR and Mobile</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/download.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Download</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#ios" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">For iOS&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=ios class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/code-integration-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Code Integration</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/pbm-api-iOS.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">iOS Mobile API</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/pbm-adunit-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Ad Unit</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/pbm-bannerad-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Banner Ad Unit</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/pbm-interstitial-ad-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Interstitial Ad Unit</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/pbm-targeting-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Targeting Parameters</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/pbm-api-result-codes-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Result Codes</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/ios/prebidmobile-object-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Prebid Mobile Object</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#android" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">For Android&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=android class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/code-integration-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Code Integration</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/pbm-api-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Android Mobile API</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/adunit-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Ad Unit</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/banneradunit-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Banner Ad Unit</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/interstitialadunit-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Interstitial Ad Unit</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/pbm-targeting-params-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Targeting Parameters</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/pbm-api-result-codes-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Result Codes</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/pbm-api/android/prebidmobile-object-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Prebid Mobile Object</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#foradops" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">For Ad Ops&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=foradops class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/adops-line-item-setup-dfp.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Setup Line items For DFP</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/adops-line-item-setup-mopub.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setup Line Items For MoPub</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/adops-price-granularity.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Price Granularity</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/dr-prebid.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Dr. Prebid Validation App</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#forcontributors" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">For Contributors&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=forcontributors class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/add-an-ad-server-adapter.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Add an Ad Server Adapter</span>
+
+                            </a>
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#legacyapi" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Legacy API&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=legacyapi class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/legacy/ios/code-integration-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Code Integration - iOS</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/legacy/ios/targeting-params-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Targeting Parameters - iOS</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/legacy/ios/logging-troubleshooting-ios.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Logging and Troubleshooting - iOS</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/legacy/android/code-integration-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Code Integration - Android</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/legacy/android/targeting-params-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Targeting Parameters - Android</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-mobile/legacy/android/logging-troubleshooting-android.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Logging and Troubleshooting - Android</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <a href="#ad-ops" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Ad Ops&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=ad-ops class="collapse sidebar-submenu in">
+
+
+
+
+                        <!--go through each section-->
+
+
+                        <a href="#adopstuts" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Ad Ops Tutorials&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=adopstuts class="collapse sidebar-submenu in">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/before-you-start.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">AdOps View of Prebid</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/prebid-universal-creative.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid Universal Creative</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/step-by-step.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item bg-secondary" style="background-color:#cccccc;">Guide to DFP Setup</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/send-all-bids-adops.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Send All Bids to the Ad Server</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/setting-up-prebid-for-amp-in-dfp.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setting up Prebid for AMP in DFP</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/setting-up-prebid-multi-format-in-dfp.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setting up Prebid Multi-Format in DFP</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/setting-up-prebid-native-in-dfp.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setting up Prebid Native in DFP (Alpha)</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/setting-up-prebid-video-in-dfp.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setting up Prebid Video in DFP</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/setting-up-prebid-video-in-freewheel.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setting up Prebid Long-Form Video in FreeWheel</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/setting-up-prebid-with-the-appnexus-ad-server.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setting up Prebid with the AppNexus Publisher Ad Server</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/setting-up-prebidjs-with-Smart-Ad-Server.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Setting up Prebid.js with Smart Ad Server</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/adops/deals.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Enable Deals</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#studies" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Studies&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=studies class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/how-many-bidders-for-header-bidding.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Optimize Header Bidding Setup</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/optimal-header-bidding-setup.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Optimal Header Bidding Setup</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/how-to-reduce-latency-of-header-bidding.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">How To Reduce The Latency of Header Bidding With Prebid.js</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/overview/how-to-simplify-line-item-setup.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">How to Simplify Line Item Setup</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <a href="#prebid-video" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Prebid Video&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=prebid-video class="collapse sidebar-submenu">
+
+
+
+
+                        <!--go through each section-->
+
+
+                        <a href="#vidoverview" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Overview&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=vidoverview class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-video/video-overview.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Prebid.js for Video Overview</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-video/video-getting-started.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Getting Started with Video for Prebid.js</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-video/video-long-form.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Getting Started with Long Form Video for Prebid.js</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/show-video-with-a-dfp-video-tag.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Show Video Ads with DFP</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/dev-docs/show-outstream-video-ads.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Outstream Video Ads</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/videos/prebid-video.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Training Videos</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#videxamples" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Examples&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=videxamples class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/examples/video/" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Prebid.js Video Examples</span>
+
+                            </a>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <a href="#prebid-server" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Prebid Server&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=prebid-server class="collapse sidebar-submenu">
+
+
+
+
+                        <!--go through each section-->
+
+
+                        <a href="#serveroverview" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Prebid Server Overview&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=serveroverview class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/prebid-server-overview.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Overview</span>
+
+                            </a>
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#serverdevelopers" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Developers&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=serverdevelopers class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/add-new-analytics-module.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Add A New Analytics Module</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/add-new-bidder.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Add A Bidder</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/pbs-bidder-info.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid Server Bidders - Additional Info</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/cookie-syncs.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Cookie Sync Technical Details</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/currency-converter.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Currency Converter</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/default-request.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Default Request</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/gdpr.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">GDPR Mechanics</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/developers/stored-requests.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Stored Requests</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        <a href="#endpoints" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fa fa-dashboard fa-fw mr-3"></span>
+                                <span class="menu-collapsed pb-sidebar-section pb-section-subtitle">Endpoints&nbsp;<img src="/assets/images/downarrow.png"></span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+
+
+
+
+
+
+
+                        <!--this is collapsed if not matching url of page-->
+
+                        <div id=endpoints class="collapse sidebar-submenu">
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/info/bidders.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-first-item">Info - Bidders</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/info/bidders/bidderName.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Info - Bidder Name</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/bidders/params.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Bidders - Params</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/cookieSync.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Starting Cookie Sync</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/openrtb2/auction.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid Server Auction</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/openrtb2/amp.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid Server AMP</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/openrtb2/video.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Prebid Server Video</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/setuid.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item">Saving User Syncs</span>
+
+                            </a>
+
+
+
+
+
+
+
+
+
+
+
+                            <!--display subsection items with links-->
+
+                            <a href="/prebid-server/endpoints/status.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                                <span class="menu-collapsed pb-nav-item pb-last-item">Get Status</span>
+
+                            </a>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <a href="#formats" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Formats&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=formats class="collapse sidebar-submenu">
+
+
+
+
+                        <!--go through each section-->
+
+
+
+                        <!--display subsection headers-->
+
+
+
+
+                        <!--display subsection headers-->
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/formats/formats.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Overview</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/formats/display.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Display</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/prebid-video/video-overview.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Video</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/dev-docs/show-native-ads.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Native</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/formats/amp.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">AMP</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/dev-docs/show-multi-format-ads.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Multi-Format</span>
+
+                        </a>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                    <a href="#support" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="fa fa-dashboard fa-fw mr-3"></span>
+                            <span class="menu-collapsed pb-sidebar-section pb-section-title">Support&nbsp;<img src="/assets/images/downarrow.png"></span>
+                            <span class="submenu-icon ml-auto"></span>
+                        </div>
+                    </a>
+
+
+
+
+                    <!--get all sub section headers-->
+
+
+
+                    <!--parent collapse div - open if matches sidebartype-->
+
+                    <div id=support class="collapse sidebar-submenu">
+
+
+
+
+                        <!--go through each section-->
+
+
+
+                        <!--display subsection headers-->
+
+
+
+
+                        <!--display subsection headers-->
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/support/" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Help</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/troubleshooting/troubleshooting.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Troubleshooting</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/videos/" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Training Videos</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/faq/faq.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">FAQs</span>
+
+                        </a>
+
+
+
+
+
+                        <!--display subsection headers-->
+
+
+                        <!-- check to see if we are on this page-->
+                        <!--display subsection items with links-->
+
+
+
+
+                        <a href="/blog.html" class="list-group-item list-group-item-action bg-dark text-white">
+
+                            <span class="menu-collapsed pb-nav-item">Blog</span>
+
+                        </a>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="col-sm-9 pb-content" markdown="1">
+
+                <h1 id="step-by-step-guide-to-dfp-setup">Step by step guide to DFP setup</h1>
+
+                <div id="youtube">
+                    <h2>(Sorry, YouTube videos aren't available with your cookie privacy settings.)</h2>
+                    <p><a class="optanon-show-settings">Cookie Settings</a></p><br />
+                </div>
+
+                <script type="text/javascript">
+                    Optanon.InsertHtml('<iframe width="853" height="480" src="https://www.youtube.com/embed/-bfI24_hwZ0?rel=0" frameborder="0" allowfullscreen="true"></iframe>', 'youtube', null, {deleteSelectorContent: true}, 3);
+                </script>
+
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Correction:</span>
+                    Correction: in your Line Item settings, 'Display Creative' should be set to 'One or More', not 'As Many as Possible' as described in the video.
+                </div>
+
+                <ul id="markdown-toc">
+                    <li><a href="#step-by-step-guide-to-dfp-setup" id="markdown-toc-step-by-step-guide-to-dfp-setup">Step by step guide to DFP setup</a>    <ul>
+                        <li><a href="#step-1-add-a-line-item" id="markdown-toc-step-1-add-a-line-item">Step 1. Add a line item</a></li>
+                        <li><a href="#step-2-add-a-creative" id="markdown-toc-step-2-add-a-creative">Step 2. Add a Creative</a></li>
+                        <li><a href="#step-3-attach-the-creative-to-the-line-item" id="markdown-toc-step-3-attach-the-creative-to-the-line-item">Step 3. Attach the Creative to the Line Item</a></li>
+                        <li><a href="#step-4-duplicate-creatives" id="markdown-toc-step-4-duplicate-creatives">Step 4. Duplicate Creatives</a></li>
+                        <li><a href="#step-5-duplicate-line-items" id="markdown-toc-step-5-duplicate-line-items">Step 5. Duplicate Line Items</a></li>
+                    </ul>
+                    </li>
+                </ul>
+
+                <h2 id="step-1-add-a-line-item">Step 1. Add a line item</h2>
+
+                <p>In DFP, create a new order with a $0.50 line item.</p>
+
+                <p>Enter all of the inventory sizes that your website has.</p>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/inventory-sizes.png" alt="Inventory Sizes" class="pb-md-img" /></p>
+
+                <p>Because header bidding partners return prices, set the Line Item <strong>Type</strong> to <strong>Price priority</strong> to enable them to compete on price.</p>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/price-priority.png" alt="Price Priority" class="pb-sm-img" /></p>
+
+                <p><br /></p>
+
+                <p>Set the <strong>Rate</strong> to $0.50 so that this line item will compete with your other demand sources at $0.50 ECPM.</p>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/rate.png" alt="Rate" class="pb-sm-img" /></p>
+
+                <p><br /></p>
+
+                <p>Set <strong>Display Creatives</strong> to <em>One or More</em> since we’ll have one or more creatives attached to this line item.</p>
+
+                <p>Set <strong>Rotate Creatives</strong> to <em>Evenly</em>.</p>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/display-and-rotation.png" alt="Display and Rotation" class="pb-sm-img" /></p>
+
+                <p>Choose the inventory that you want to run header bidding on.</p>
+
+                <p>By default, <code class="highlighter-rouge">prebid.js</code> will send the highest bid price to DFP using the keyword <code class="highlighter-rouge">hb_pb</code>.</p>
+
+                <p>This line item will capture the bids in the range from $0.50 to $1 by targeting the keyword <code class="highlighter-rouge">hb_pb</code> set to <code class="highlighter-rouge">0.50</code> in the <strong>Key-values</strong> section.</p>
+
+                <p><strong>You must enter the value to two decimal places, e.g., <code class="highlighter-rouge">1.50</code>.  If you don’t use two decimal places, header bidding will not work.</strong></p>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/key-values.png" alt="Key-values" class="pb-lg-img" /></p>
+
+                <p><br /></p>
+
+                <h2 id="step-2-add-a-creative">Step 2. Add a Creative</h2>
+
+                <p>Next, add a creative to this $0.50 line item; we will duplicate the creative later.</p>
+
+                <p>Choose the same advertiser we’ve assigned the line item to.</p>
+
+                <p>Note that this has to be a <strong>Third party</strong> creative. The <strong>“Serve into a Safeframe”</strong> box can be <strong>UNCHECKED</strong> or <strong>CHECKED</strong> (Prebid universal creatve is SafeFrame compatible).</p>
+
+                <p>Copy this creative code snippet and paste it into the <strong>Code snippet</strong> box.</p>
+
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src = "https://cdn.jsdelivr.net/npm/prebid-universal-creative@latest/dist/creative.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var ucTagData = {};
+  ucTagData.adServerDomain = "";
+  ucTagData.pubUrl = "%%PATTERN:url%%";
+  ucTagData.targetingMap = %%PATTERN:TARGETINGMAP%%;
+
+  try {
+    ucTag.renderAd(document, ucTagData);
+  } catch (e) {
+    console.log(e);
+  }
+&lt;/script&gt;
+</code></pre></div></div>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/new-creative.png" alt="New creative" class="pb-lg-img" /></p>
+
+                <p>Make sure the creative size is set to 1x1.  This allows us to set up size override, which allows this creative to serve on all inventory sizes.</p>
+
+                <p class="alert alert-warning">Note that safeframes don’t work with older versions of Prebid.js (v1.23 and before) in combination with recent versions of <a href="https://github.com/prebid/prebid-universal-creative">Prebid Universal Creative</a>.</p>
+
+                <h2 id="step-3-attach-the-creative-to-the-line-item">Step 3. Attach the Creative to the Line Item</h2>
+
+                <p>Next, let’s attach the creative to the $0.50 line item you just created.  Click into the Line Item, then the <strong>Creatives</strong> tab.</p>
+
+                <p>There will be yellow box showing each ad spot that you haven’t uploaded creatives for yet.  Since you’ve already made the creatives, click <strong>use existing creatives</strong> next to each size.</p>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/use-existing-creatives-01.png" alt="Use existing creatives list" class="pb-lg-img" /></p>
+
+                <p>In the pop-up dialog that appears, click <strong>Show All</strong> to remove the default size filters and see the 1x1 creatives. Include the prebid creative and click <strong>Save</strong>.</p>
+
+                <p><img src="http://prebid.org/assets/images/demo-setup/use-existing-creatives-02.png" alt="Use existing creatives dialog" class="pb-lg-img" /></p>
+
+                <p>Back in the line item, go into the <strong>Creatives</strong> tab again, and click into the creative you just added.</p>
+
+                <p>Then, in the creative’s <strong>Settings</strong> tab, override all sizes in the <strong>Size overrides</strong> field.</p>
+
+                <p>Save the creative and go back to the line item.</p>
+
+                <p><br /></p>
+
+                <h2 id="step-4-duplicate-creatives">Step 4. Duplicate Creatives</h2>
+
+                <p>DFP has a constraint that one creative can be served to at most one ad unit in a page under GPT’s single request mode.</p>
+
+                <p>Let’s say your page has 4 ad units.  We need to have at least 4 creatives attached to the line item in case more than 2 bids are within the $0.50 range.</p>
+
+                <p>Therefore, we need to duplicate our Prebid creative 4 times.</p>
+
+                <p>Once that’s done, we have a fully functioning line item with 4 creatives attached.</p>
+
+                <p><br /></p>
+
+                <h2 id="step-5-duplicate-line-items">Step 5. Duplicate Line Items</h2>
+
+                <p>Now let’s duplicate our line item for bids above $0.50.</p>
+
+                <p>In the Prebid order page, copy the line item with shared creatives.</p>
+
+                <p>This way you only have 4 creatives to maintain, and any updates to those creatives are applied to all pre-bid line items.</p>
+
+                <p>For example, we can duplicate 3 more line items:</p>
+
+                <ul>
+                    <li>$1.00</li>
+                    <li>$1.50</li>
+                    <li>$2.00</li>
+                </ul>
+
+                <p>Let’s go into each of them to update some settings.  For each duplicated line item:</p>
+
+                <ol>
+                    <li>
+                        <p>Change the name to reflect the price, e.g., “Prebid_1.00”, “Prebid_1.50”</p>
+                    </li>
+                    <li>
+                        <p>Change the <strong>Rate</strong> to match the new price of the line item.</p>
+                    </li>
+                    <li>
+                        <p>In <strong>Key-values</strong>, make sure to target <code class="highlighter-rouge">hb_pb</code> at the new price, e.g., $1.00.  Again, be sure to use 2 decimal places.</p>
+                    </li>
+                    <li>
+                        <p>(Optional) Set the start time to <em>Immediate</em> so you don’t have to wait.</p>
+                    </li>
+                </ol>
+
+                <p>Repeat for your other line items until you have the pricing granularity level you want.</p>
+
+
+
+
+            </div>
+
+        </div>
+        <!--end wrapper-->
+    </div>
+    <!--end row-->
+</div>
+
+<p></p>
+<hr>
+
+
+
+
+<div class="container">
+    <div class="pb_footer">
+        All demos, instructions, documentation and code included on the Prebid.org website are released<br /> under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License</a>. | <a href="/credits.html">Credits</a>
+        <p></p>
+    </div>
+</div>
+
+<!-- / copyrights -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130832561-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130832561-1', {'anonymize_ip': true});
+</script>
+
+<script>
+    $(document).ready(function() {
+        $( 'a[href^="http://"]' ).attr( 'target','_blank' );
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
