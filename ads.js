@@ -39,10 +39,16 @@ function setUpIMA() {
 
   // Request video ads.
   var adsRequest = new google.ima.AdsRequest();
+  //adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
+  //    'sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&' +
+  //    'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
+  //    'cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=';
+  
   adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
-      'sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&' +
-      'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
-      'cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=';
+    'sz=640x480&iu=/21681201340/testing/appnexus/phil&ciu_szs=300x250&' +
+    'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
+    'cmsid=2471555&vid=ciy29vv7p00010gquqb1otppi&' + 
+    'cust_params=hb_pb_cat_dur=50.00_news_30s%2C51.00_shopping_30s%2C53.00_kfc_30s%2C54.00_auto_30s%2C55.00_kfc_30s%26hb_cache_id=123&correlator=';
 
   // Specify the linear and nonlinear slot sizes. This helps the SDK to
   // select the correct creative if multiple are returned.
