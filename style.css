@@ -39,3 +39,15 @@
 #inputs{
   margin-top: inherit;
 }
+
+table{
+  width: 640px;
+}
+
+tbody tr td:first-child {
+  width: 10%;
+}
+
+tbody tr td:second-child {
+  width: 90%;
+}
