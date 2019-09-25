@@ -44,6 +44,7 @@ function setUpIMA() {
   //    'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
   //    'cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=';
   
+  var adsRequest = new google.ima.AdsRequest();
   adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
     'sz=640x480&iu=/21681201340/testing/appnexus/phil&ciu_szs=300x250&' +
     'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
