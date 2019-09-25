@@ -35,3 +35,20 @@
   -webkit-box-shadow: inset 0 -2px #22303f;
   box-shadow: inset 0 -2px #22303f;
 }
+
+#inputs{
+  margin-top: inherit;
+}
+
+#hb_pb_cat_dur{
+  width: 530px;
+}
+
+#hb_cache_id{
+  margin-top: inherit;
+}
+
+#hb_cache_id{
+  width: 545px;
+}
+
