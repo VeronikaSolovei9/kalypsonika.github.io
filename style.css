@@ -51,3 +51,7 @@ tbody tr td:first-child {
 tbody tr td:second-child {
   width: 90%;
 }
+
+input{
+  width: 100%;
+}
