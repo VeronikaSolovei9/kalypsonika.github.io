@@ -10,10 +10,16 @@ var intervalTimer;
 var playButton;
 var videoContent;
 
-function init() {
+function init(){
+  initButton = document.getElementById('initButton');
+  initButton.addEventListener('click', load);
+}
+
+function load() {
   videoContent = document.getElementById('contentElement');
   playButton = document.getElementById('playButton');
   playButton.addEventListener('click', playAds);
+  setUpIMA();
 }
 
 function setUpIMA() {
@@ -74,7 +80,6 @@ function createAdDisplayContainer() {
 }
 
 function playAds() {
-  setUpIMA();
   
   // Initialize the container. Must be done via a user action on mobile devices.
   videoContent.load();
