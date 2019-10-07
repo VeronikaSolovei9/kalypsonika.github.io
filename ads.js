@@ -58,7 +58,7 @@ function setUpIMA() {
     'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
     'cmsid=2471555&vid=ciy29vv7p00010gquqb1otppi&' + 
     'cust_params=hb_pb_cat_dur=' + hb_pb_cat_dur + 
-    'hb_cache_id=' + hb_cache_id
+    '&hb_cache_id=' + hb_cache_id
 
   // Specify the linear and nonlinear slot sizes. This helps the SDK to
   // select the correct creative if multiple are returned.
