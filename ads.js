@@ -59,13 +59,13 @@ function setUpIMA() {
   adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
     'sz=640x480&' +
     'iu=/21681201340/testing/appnexus/phil&' +
-    'impl=s&' + 
+    //'impl=s&' + 
     'gdfp_req=1&' + 
     'env=vp&' +
-    'output=vast&' + 
+    //'output=vast&' + 
     'unviewed_position_start=1&' +
-    'cmsid=2471555&' +
-    'vid=ciy29vv7p00010gquqb1otppi&' + 
+    //'cmsid=2471555&' +
+    //'vid=ciy29vv7p00010gquqb1otppi&' + 
     'cust_params=' + custParamsRes
 
   // Specify the linear and nonlinear slot sizes. This helps the SDK to
