@@ -51,6 +51,7 @@ function setUpIMA() {
   
   var hb_pb_cat_dur = document.getElementById('hb_pb_cat_dur').value
   var hb_cache_id = document.getElementById('hb_cache_id').value
+  var iu = document.getElementById('iu').value
   
   var adsRequest = new google.ima.AdsRequest();
   var custParams = "hb_pb_cat_dur=" + hb_pb_cat_dur + "&hb_pb_cache_id=" + hb_cache_id;
@@ -58,7 +59,7 @@ function setUpIMA() {
   
   adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
     'sz=640x480&' +
-    'iu=/21681201340/testing/appnexus/phil&' +
+    'iu=' + iu + '&'
     //'impl=s&' + 
     'gdfp_req=1&' + 
     'env=vp&' +
