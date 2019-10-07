@@ -60,7 +60,7 @@ function setUpIMA() {
   
   adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
     'sz=640x480&' +
-    'iu=' + iuRes + '&'
+    'iu=' + iuRes + 
     //'iu=/21681201340/testing/appnexus/phil&' +
     //'impl=s&' + 
     'gdfp_req=1&' + 
