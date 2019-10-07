@@ -53,12 +53,20 @@ function setUpIMA() {
   var hb_cache_id = document.getElementById('hb_cache_id').value
   
   var adsRequest = new google.ima.AdsRequest();
+  var custParams = "hb_pb_cat_dur=" + hb_pb_cat_dur + "&hb_pb_cache_id=" + hb_cache_id;
+  var custParamsRes = encodeURIComponent(custParams);
+  
   adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
-    'sz=640x480&iu=/21681201340/testing/appnexus/phil&ciu_szs=300x250&' +
-    'impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&' +
-    'cmsid=2471555&vid=ciy29vv7p00010gquqb1otppi&' + 
-    'cust_params=hb_pb_cat_dur=' + hb_pb_cat_dur + 
-    '&hb_cache_id=' + hb_cache_id
+    'sz=640x480&' +
+    'iu=/21681201340/testing/appnexus/phil&' +
+    'impl=s&' + 
+    'gdfp_req=1&' + 
+    'env=vp&' +
+    'output=vast&' + 
+    'unviewed_position_start=1&' +
+    'cmsid=2471555&' +
+    'vid=ciy29vv7p00010gquqb1otppi&' + 
+    'cust_params=' + custParamsRes
 
   // Specify the linear and nonlinear slot sizes. This helps the SDK to
   // select the correct creative if multiple are returned.
