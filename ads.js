@@ -65,7 +65,7 @@ function setUpIMA() {
     //'impl=s&' + 
     'gdfp_req=1&' + 
     'env=vp&' +
-    //'output=vast&' + 
+    'output=vmap&' + 
     'unviewed_position_start=1&' +
     //'cmsid=2471555&' +
     //'vid=ciy29vv7p00010gquqb1otppi&' + 
