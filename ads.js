@@ -53,7 +53,6 @@ function setUpIMA() {
   var hb_cache_id = document.getElementById('hb_cache_id').value
   var iu = document.getElementById('iu').value
   var iuRes = encodeURIComponent(iu);
-  var output = document.getElementById('output').value
   
   var adsRequest = new google.ima.AdsRequest();
   var custParams = "hb_pb_cat_dur=" + hb_pb_cat_dur + "&hb_cache_id=" + hb_cache_id;
@@ -66,8 +65,8 @@ function setUpIMA() {
     //'impl=s&' + 
     'gdfp_req=1&' + 
     'env=vp&' +
-    //'output=xml_vast3&' +
-  'output=' + output + '&' +
+    'output=vmap&' + 
+    'ad_rule=1&' +
     'unviewed_position_start=1&' +
     //'cmsid=2471555&' +
     //'vid=ciy29vv7p00010gquqb1otppi&' + 
