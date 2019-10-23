@@ -55,7 +55,7 @@ function setUpIMA() {
   var iuRes = encodeURIComponent(iu);
   
   var adsRequest = new google.ima.AdsRequest();
-  var custParams = "hb_pb_cat_dur=" + hb_pb_cat_dur + "&hb_pb_cache_id=" + hb_cache_id;
+  var custParams = "hb_pb_cat_dur=" + hb_pb_cat_dur + "&hb_cache_id=" + hb_cache_id;
   var custParamsRes = encodeURIComponent(custParams);
   
   adsRequest.adTagUrl = 'https://pubads.g.doubleclick.net/gampad/ads?' +
