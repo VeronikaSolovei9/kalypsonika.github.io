@@ -1,0 +1,83 @@
+<VAST version="3.0">
+    <Ad id="143229261">
+        <InLine>
+            <AdSystem>adnxs</AdSystem>
+            <AdTitle>
+                <![CDATA[ Automotive and Vehicles_subaru ]]>
+            </AdTitle>
+            <Error>
+                <![CDATA[ https://nym1-ib.adnxs.com/vast_track/v2?info=ZgAAAAMArgAFAQm4XxNhAAAAABGk_WfCeXHvOxlpTRNhAAAAACDNgqZEKAAw7Ug47UhAw-FYSNDX_AFQka2TB1h6YgJDTmgBcAF4AIABAIgBAJABgAWYAeADoAEAqAHNgqZEsAEB&s=5602cc010b2921694fe2fa620e1eb078fb5b2f89&event_type=4&test=1&error_code=[ERRORCODE] ]]>
+            </Error>
+            <Impression id="adnxs">
+                <![CDATA[ https://nym1-ib.adnxs.com/it?an_audit=0&test=1&referrer=http%3A%2F%2Fwww.foobar.com%2F1234.html&e=wqT_3QLACuhABQAAAwDWAAUBCOmazYgGEKT7n5Ocr9z3OxjMvrnquI2HqhEqNgmOWItPAQAoQBGOWItPAQAoQBkAAAECCOA_IREbACkRCQAxARm4AADgPzCRrZMHOO1IQO1ISAJQzYKmRFiXnG5gAGjgxYcBeLG7BYABAYoBA1VTRJIFBvBVmAEBoAEBqAEBsAEAuAEDwAEEyAEC0AEB2AEn4AEB8AEAigI8dWYoJ2EnLCAzMDkyMzY0LCAxNjI4NjU0OTUzKTt1ZigncicsIDE0MzIyOTI2MSwgMTYZH_QFAZIC8QMhNFU4a2VBaUY1WUVORU0yQ3BrUVlBQ0NYbkc0d0FEZ0FRQVJJN1VoUWthMlRCMWdBWVBfX19fOFBhQUJ3QVhnQmdBRUJpQUVCa0FFQm1BRUJvQUVCcUFFRHNBRUF1UUctMEV6RkFBQW9RTUVCdnRCTXhRQUFLRURKQVhDcDBDWTJrZkVfMlFFQUFBQUFBQUR3UC1BQkFQVUJBQUFBQUpnQ0FLQUNBTFVDQUFBQUFMMENBQUFBQU1BQ0FjZ0NBZEFDQWRnQ0FlQUNBT2dDQVBnQ1RvQURBcGdEQWJvRENVNVpUVEk2TkRreU51QURraXlJQkFDUUJBQ1lCQUhCQkFBQUENegh5UVENCiRBQUFOZ0VBUEVFAQsJASBDSUJiNG1xUVUJDxhBRHdQN0VGDQ0UQUFBREJCHT8AeRUoAUwyKAAAWi4oALg0QVdCbjBud0JiZnB3UVA0Qll6ZnZBR0NCZ05WVTBTSUJnQ1FCZ0dZQmdDaEJnQQFONEFBQ2hBcUFZQnNnWWtDHXQARR0MAEcdDABJHQw0dUFZS5oCiQEhTXc0VHY69QEkbDV4dUlBUW9BRBX4VG9RRG9KVGxsTk1qbzBPVEkyUUpJc1MRUQxQQV9VEQwMQUFBVx0MAFkdDABhHQwAYx0M8OVlQUEu2AIA4AKtmEjqAh9odHRwOi8vd3d3LmZvb2Jhci5jb20vMTIzNC5odG1sgAMAiAMBkAMAmAMUoAMBqgMAwAPgqAHIAwDSAzQIEBIoQUEwMDBERkU3NDE2ODQ3N0M3MEQyOTFmNTc0RDM0NDc5MEUwQkIxMRgBIgRkcGlk2AMA4AMA6AMB-AMDgAQAkgQJL29wZW5ydGIymAQAogQOMTIzLjE0NS4xNjcuMTCoBACyBA4IABAAGIAFIOADMAA4A7gEAMAEAMgEANIEDjkzMjUjTllNMjo0OTI22gQCCAHgBADwBGHmIIgFAZgFAKAF_xEBOAGqBQZiaWRfaWTABQDJBYkgFPA_0gUJCQkMcAAA2AUB4AUB8AV6-gUECAAQAJAGAZgGALgGAMEGCSMo8D_QBvUv2gYWChAJERkBXBAAGADgBgTyBgIIAIAHAYgHAKAHQLoHDwFISBgAIAAwADjKBUAAyAexuwXSBw0VdAE4CNoHBgknPOAHAOoHAggA8AeciQv6BxIVJgAREWkEgghKFQA.&s=1fddec153fbba76ce8b7ea84f3fb5cb5e6a35e89 ]]>
+            </Impression>
+            <Creatives>
+                <Creative id="139956" adID="143229261">
+                    <Linear>
+                        <Duration>00:00:30.000</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[ https://nym1-ib.adnxs.com/vast_track/v2?info=ZgAAAAMArgAFAQm4XxNhAAAAABGk_WfCeXHvOxlpTRNhAAAAACDNgqZEKAAw7Ug47UhAw-FYSNDX_AFQka2TB1h6YgJDTmgBcAF4AIABAIgBAJABgAWYAeADoAEAqAHNgqZEsAEB&s=5602cc010b2921694fe2fa620e1eb078fb5b2f89&event_type=2&test=1 ]]>
+                            </Tracking>
+                            <Tracking event="skip">
+                                <![CDATA[ https://nym1-ib.adnxs.com/vast_track/v2?info=ZgAAAAMArgAFAQm4XxNhAAAAABGk_WfCeXHvOxlpTRNhAAAAACDNgqZEKAAw7Ug47UhAw-FYSNDX_AFQka2TB1h6YgJDTmgBcAF4AIABAIgBAJABgAWYAeADoAEAqAHNgqZEsAEB&s=5602cc010b2921694fe2fa620e1eb078fb5b2f89&event_type=3&test=1 ]]>
+                            </Tracking>
+                            <Tracking event="firstQuartile">
+                                <![CDATA[ https://nym1-ib.adnxs.com/vast_track/v2?info=ZgAAAAMArgAFAQm4XxNhAAAAABGk_WfCeXHvOxlpTRNhAAAAACDNgqZEKAAw7Ug47UhAw-FYSNDX_AFQka2TB1h6YgJDTmgBcAF4AIABAIgBAJABgAWYAeADoAEAqAHNgqZEsAEB&s=5602cc010b2921694fe2fa620e1eb078fb5b2f89&event_type=5&test=1 ]]>
+                            </Tracking>
+                            <Tracking event="midpoint">
+                                <![CDATA[ https://nym1-ib.adnxs.com/vast_track/v2?info=ZgAAAAMArgAFAQm4XxNhAAAAABGk_WfCeXHvOxlpTRNhAAAAACDNgqZEKAAw7Ug47UhAw-FYSNDX_AFQka2TB1h6YgJDTmgBcAF4AIABAIgBAJABgAWYAeADoAEAqAHNgqZEsAEB&s=5602cc010b2921694fe2fa620e1eb078fb5b2f89&event_type=6&test=1 ]]>
+                            </Tracking>
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[ https://nym1-ib.adnxs.com/vast_track/v2?info=ZgAAAAMArgAFAQm4XxNhAAAAABGk_WfCeXHvOxlpTRNhAAAAACDNgqZEKAAw7Ug47UhAw-FYSNDX_AFQka2TB1h6YgJDTmgBcAF4AIABAIgBAJABgAWYAeADoAEAqAHNgqZEsAEB&s=5602cc010b2921694fe2fa620e1eb078fb5b2f89&event_type=7&test=1 ]]>
+                            </Tracking>
+                            <Tracking event="complete">
+                                <![CDATA[ https://nym1-ib.adnxs.com/vast_track/v2?info=ZgAAAAMArgAFAQm4XxNhAAAAABGk_WfCeXHvOxlpTRNhAAAAACDNgqZEKAAw7Ug47UhAw-FYSNDX_AFQka2TB1h6YgJDTmgBcAF4AIABAIgBAJABgAWYAeADoAEAqAHNgqZEsAEB&s=5602cc010b2921694fe2fa620e1eb078fb5b2f89&event_type=8&test=1 ]]>
+                            </Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[ https://www.subaru.com/ ]]>
+                            </ClickThrough>
+                            <ClickTracking id="adnxs">
+                                <![CDATA[ https://nym1-ib.adnxs.com/click?jliLTwEAKECOWItPAQAoQAAAAAAAAOA_jliLTwEAKECOWItPAQAoQKT9Z8J5ce87TF9OjWscVBFpTRNhAAAAAJHW5ABtJAAAbSQAAAIAAABNgYkIF44bAAAAAABVU0QAVVNEAAEAAQDg4gAAAAABAwQCAAAAAMMANRypdwAAAAA./bcr=AAAAAAAA8D8=/cnd=%21Mw4TvAiF5YENEM2CpkQYl5xuIAQoADEAAAAAAAAoQDoJTllNMjo0OTI2QJIsSQAAAAAAAPA_UQAAAAAAAAAAWQAAAAAAAAAAYQAAAAAAAAAAaQAAAAAAAAAAcQAAAAAAAAAAeAA./cca=OTMyNSNOWU0yOjQ5MjY=/bn=89521/test=1/ ]]>
+                            </ClickTracking>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile id="1429343" delivery="progressive" type="video/webm" width="768" height="432"
+                                       scalable="true" bitrate="500" maintainAspectRatio="true">
+                                <![CDATA[ https://vcdn.adnxs.com/p/creative-video/ab/7b/72/bd/ab7b72bd-da23-4595-9cc1-6b81423f5dcb/ab7b72bd-da23-4595-9cc1-6b81423f5dcb_768_432_500k.webm ]]>
+                            </MediaFile>
+                            <MediaFile id="1429344" delivery="progressive" type="video/x-flv" width="768" height="432"
+                                       scalable="true" bitrate="500" maintainAspectRatio="true">
+                                <![CDATA[ https://vcdn.adnxs.com/p/creative-video/ab/7b/72/bd/ab7b72bd-da23-4595-9cc1-6b81423f5dcb/ab7b72bd-da23-4595-9cc1-6b81423f5dcb_768_432_500k.flv ]]>
+                            </MediaFile>
+                            <MediaFile id="1429345" delivery="progressive" type="video/mp4" width="768" height="432"
+                                       scalable="true" bitrate="500" maintainAspectRatio="true">
+                                <![CDATA[ https://vcdn.adnxs.com/p/creative-video/ab/7b/72/bd/ab7b72bd-da23-4595-9cc1-6b81423f5dcb/ab7b72bd-da23-4595-9cc1-6b81423f5dcb_768_432_500k.mp4 ]]>
+                            </MediaFile>
+                            <MediaFile id="1429346" delivery="progressive" type="video/mp4" width="768" height="432"
+                                       scalable="true" bitrate="1096" maintainAspectRatio="true">
+                                <![CDATA[ https://vcdn.adnxs.com/p/creative-video/ab/7b/72/bd/ab7b72bd-da23-4595-9cc1-6b81423f5dcb/ab7b72bd-da23-4595-9cc1-6b81423f5dcb.mp4 ]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+            <Extensions>
+                <Extension type="AdVerifications">
+                    <AdVerifications>
+                        <Verification vendor="appnexus.com-omid">
+                            <JavaScriptResource apiFramework="omid" browserOptional="true">
+                                <![CDATA[ https://cdn.adnxs.com/v/video/213/trk.js ]]>
+                            </JavaScriptResource>
+                            <VerificationParameters>
+                                <![CDATA[ tv=vh2-132&d=1x1&s=4139984&st=1&vctx=0&ts=1628654953&vc=iab;vid_ccr=1&vjs=https%3A%2F%2Fcdn.adnxs.com%2Fv%2Fvideo%2F213%2Ftrk.js&cb=https%3A%2F%2Fnym1-ib.adnxs.com%2Fvevent%3Fan_audit%3D0%26test%3D1%26referrer%3Dhttp%253A%252F%252Fwww.foobar.com%252F1234.html%26e%3DwqT_3QLACuhABQAAAwDWAAUBCOmazYgGEKT7n5Ocr9z3OxjMvrnquI2HqhEqNgmOWItPAQAoQBGOWItPAQAoQBkAAAECCOA_IREbACkRCQAxARm4AADgPzCRrZMHOO1IQO1ISAJQzYKmRFiXnG5gAGjgxYcBeLG7BYABAYoBA1VTRJIFBvBVmAEBoAEBqAEBsAEAuAEDwAEEyAEC0AEB2AEn4AEB8AEAigI8dWYoJ2EnLCAzMDkyMzY0LCAxNjI4NjU0OTUzKTt1ZigncicsIDE0MzIyOTI2MSwgMTYZH_QFAZIC8QMhNFU4a2VBaUY1WUVORU0yQ3BrUVlBQ0NYbkc0d0FEZ0FRQVJJN1VoUWthMlRCMWdBWVBfX19fOFBhQUJ3QVhnQmdBRUJpQUVCa0FFQm1BRUJvQUVCcUFFRHNBRUF1UUctMEV6RkFBQW9RTUVCdnRCTXhRQUFLRURKQVhDcDBDWTJrZkVfMlFFQUFBQUFBQUR3UC1BQkFQVUJBQUFBQUpnQ0FLQUNBTFVDQUFBQUFMMENBQUFBQU1BQ0FjZ0NBZEFDQWRnQ0FlQUNBT2dDQVBnQ1RvQURBcGdEQWJvRENVNVpUVEk2TkRreU51QURraXlJQkFDUUJBQ1lCQUhCQkFBQUENegh5UVENCiRBQUFOZ0VBUEVFAQsJASBDSUJiNG1xUVUJDxhBRHdQN0VGDQ0UQUFBREJCHT8AeRUoAUwyKAAAWi4oALg0QVdCbjBud0JiZnB3UVA0Qll6ZnZBR0NCZ05WVTBTSUJnQ1FCZ0dZQmdDaEJnQQFONEFBQ2hBcUFZQnNnWWtDHXQARR0MAEcdDABJHQw0dUFZS5oCiQEhTXc0VHY69QEkbDV4dUlBUW9BRBX4VG9RRG9KVGxsTk1qbzBPVEkyUUpJc1MRUQxQQV9VEQwMQUFBVx0MAFkdDABhHQwAYx0M8OVlQUEu2AIA4AKtmEjqAh9odHRwOi8vd3d3LmZvb2Jhci5jb20vMTIzNC5odG1sgAMAiAMBkAMAmAMUoAMBqgMAwAPgqAHIAwDSAzQIEBIoQUEwMDBERkU3NDE2ODQ3N0M3MEQyOTFmNTc0RDM0NDc5MEUwQkIxMRgBIgRkcGlk2AMA4AMA6AMB-AMDgAQAkgQJL29wZW5ydGIymAQAogQOMTIzLjE0NS4xNjcuMTCoBACyBA4IABAAGIAFIOADMAA4A7gEAMAEAMgEANIEDjkzMjUjTllNMjo0OTI22gQCCAHgBADwBGHmIIgFAZgFAKAF_xEBOAGqBQZiaWRfaWTABQDJBYkgFPA_0gUJCQkMcAAA2AUB4AUB8AV6-gUECAAQAJAGAZgGALgGAMEGCSMo8D_QBvUv2gYWChAJERkBXBAAGADgBgTyBgIIAIAHAYgHAKAHQLoHDwFISBgAIAAwADjKBUAAyAexuwXSBw0VdAE4CNoHBgknPOAHAOoHAggA8AeciQv6BxIVJgAREWkEgghKFQA.%26s%3D1fddec153fbba76ce8b7ea84f3fb5cb5e6a35e89&cet=0&cecb=&rdcb=https%3A%2F%2Fnym1-ib.adnxs.com%2Frd_log%3Fan_audit%3D0%26test%3D1%26referrer%3Dhttp%253A%252F%252Fwww.foobar.com%252F1234.html%26e%3DwqT_3QLGDOhGBgAAAwDWAAUBCOmazYgGEKT7n5Ocr9z3OxjMvrnquI2HqhEqNgmOWItPAQAoQBGOWItPAQAoQBkAAAECCOA_IREbACkRCQAxARm4AADgPzCRrZMHOO1IQO1ISAJQzYKmRFiXnG5gAGjgxYcBeLG7BYABAYoBA1VTRJIFBvBVmAEBoAEBqAEBsAEAuAEDwAEEyAEC0AEB2AEn4AEB8AEAigI8dWYoJ2EnLCAzMDkyMzY0LCAxNjI4NjU0OTUzKTt1ZigncicsIDE0MzIyOTI2MSwgMTYZH_QFAZIC8QMhNFU4a2VBaUY1WUVORU0yQ3BrUVlBQ0NYbkc0d0FEZ0FRQVJJN1VoUWthMlRCMWdBWVBfX19fOFBhQUJ3QVhnQmdBRUJpQUVCa0FFQm1BRUJvQUVCcUFFRHNBRUF1UUctMEV6RkFBQW9RTUVCdnRCTXhRQUFLRURKQVhDcDBDWTJrZkVfMlFFQUFBQUFBQUR3UC1BQkFQVUJBQUFBQUpnQ0FLQUNBTFVDQUFBQUFMMENBQUFBQU1BQ0FjZ0NBZEFDQWRnQ0FlQUNBT2dDQVBnQ1RvQURBcGdEQWJvRENVNVpUVEk2TkRreU51QURraXlJQkFDUUJBQ1lCQUhCQkFBQUENegh5UVENCiRBQUFOZ0VBUEVFAQsJASBDSUJiNG1xUVUJDxhBRHdQN0VGDQ0UQUFBREJCHT8AeRUoAUwyKAAAWi4oALg0QVdCbjBud0JiZnB3UVA0Qll6ZnZBR0NCZ05WVTBTSUJnQ1FCZ0dZQmdDaEJnQQFONEFBQ2hBcUFZQnNnWWtDHXQARR0MAEcdDABJHQw0dUFZS5oCiQEhTXc0VHY69QEkbDV4dUlBUW9BRBX4VG9RRG9KVGxsTk1qbzBPVEkyUUpJc1MRUQxQQV9VEQwMQUFBVx0MAFkdDABhHQwAYx0M8HllQUEu2AIA4AKtmEjqAh9odHRwOi8vd3d3LmZvb2Jhci5jb20vMTIzNC5odG1s8gIRCgZBRFZfSUQSBzMwOTIzNjTyAhEKBkNQR19JRBIHNzM2OTkxMfICEQoFQ1BfSUQSCDI3MjkyMjkz8gINCghBRFZfRlJFURIBMAUQOFJFTV9VU0VSEgEw8gIMCgUgFENPREUSAAUPAVcRDxALCgdDUBUOEAkKBUlPAXMEAPIBGgRJTxUaOBMKD0NVU1RPTV9NT0RFTA0kCBoKFjIWABxMRUFGX05BTQVqCB4KGjYdAAhBU1QBPhBJRklFRAFiHA0KCFNQTElUAU3w3gEwgAMAiAMBkAMAmAMUoAMBqgMAwAPgqAHIAwDSAzQIEBIoQUEwMDBERkU3NDE2ODQ3N0M3MEQyOTFmNTc0RDM0NDc5MEUwQkIxMRgBIgRkcGlk2AMA4AMA6AMB-AMDgAQAkgQJL29wZW5ydGIymAQAogQOMTIzLjE0NS4xNjcuMTCoBACyBA4IABAAGIAFIOADMAA4A7gEAMAEAMgEANIEDjkzMjUjTllNMjo0OTI22gQCCAHgBADwBM2CpkSIBQGYBQCgBf___________wGqBQZiaWRfaWTABQDJBQClJxTwP9IFCQkFC3QAAADYBQHgBQHwBXr6BQQIABAAkAYBmAYAuAYAwQYBHzAAAPA_0Ab1L9oGFgoQCREZAVwQABgA4AYE8gYCCACABwGIBwCgB0C6Bw8BSEgYACAAMAA4ygVAAMgHsbsF0gcNFXQBOAjaBwYJJzzgBwDqBwIIAPAHnIkL-gcSFSYAERFpBIIIShUA%26s%3Def4665ea28aa46ea5dbe3275d3e441f072ef0f55&bridge=1.11.0&rblog=auc=4318795335438171556;bm=9325;sm=9325;cr=143229261;pl=14997137&vid_context=anoutstream;anbannerstream;anoverlayplayer ]]>
+                            </VerificationParameters>
+                        </Verification>
+                    </AdVerifications>
+                </Extension>
+            </Extensions>
+        </InLine>
+    </Ad>
+</VAST>
